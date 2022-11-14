@@ -13,13 +13,17 @@ main() {
         package "64"
     elif [ "$1" == "64-v3" ]; then
         package "64-v3"
+    elif [ "$1" == "64-alderlake" ]; then
+        package "64-alderlake"
     elif [ "$1" == "all-64" ]; then
         package "64"
         package "64-v3"
+        package "64-alderlake"
     else [ "$1" == "all" ];
         package "32"
         package "64"
         package "64-v3"
+        package "64-alderlake"
     fi
     rm -rf ./release/mpv-packaging-master
 }
