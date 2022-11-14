@@ -8,12 +8,13 @@ on:
       build_target:
         description: "Build target"
         required: false
-        default: "all-64bit"
+        default: "alderlake"
         type: choice
         options:
         - 32bit
         - 64bit
         - 64bit-v3
+        - alderlake
         - all-64bit
         - all
       needclean:
