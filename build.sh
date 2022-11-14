@@ -38,6 +38,10 @@ package() {
         local arch="x86_64"
         local gcc_arch="-DGCC_ARCH=x86-64-v3"
         local x86_64_level="-v3"
+    elif [ $bit == "64-alderlake" ]; then
+        local arch="x86_64"
+        local gcc_arch="-DGCC_ARCH=alderlake"
+        local x86_64_level="-alderlake" 
     fi
 
     build $bit $arch $gcc_arch
