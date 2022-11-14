@@ -77,14 +77,17 @@ jobs:
               case "64bit-v3":
                 matrix.bit = ["64-v3"];
                 break;
+              case "alderlake":
+                matrix.bit = ["64-alderlake"];
+                break;
               case "all-64bit":
-                matrix.bit = ["64","64-v3"];
+                matrix.bit = ["64","64-v3","64-alderlake"];
                 break;
               case "all":
-                matrix.bit = ["32","64","64-v3"];
+                matrix.bit = ["32","64","64-v3","64-alderlake"];
                 break;
               default:
-                matrix.bit = ["64","64-v3"];
+                matrix.bit = ["64-alderlake"];
                 break;
             }
             core.setOutput("matrix",JSON.stringify(matrix));
