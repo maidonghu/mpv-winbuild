@@ -237,6 +237,9 @@ jobs:
               case "64-v3":
                 arch = "x86_64-v3";
                 break;
+              case "64-alderlake":
+                arch = "x86_64-alderlake";
+                break;
             }
             for (let type of types) {
               const globber = await glob.create(`mpv-winbuild-cmake/release/${type}-${arch}-*.7z`);
