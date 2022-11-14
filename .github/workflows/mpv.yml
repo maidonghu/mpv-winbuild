@@ -179,6 +179,7 @@ jobs:
           elif [ $bit == "64-alderlake" ]; then
               arch="x86_64"
               gcc_arch=-DGCC_ARCH=alderlake
+              x86_64_level=-alderlake
           fi
           retry-tool() {
             local RETRY_COUNTER=0
